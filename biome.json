@@ -1,0 +1,109 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": ["**", "!**/node_modules/**", "!**/dist/**", "!**/.git/**"],
+    "experimentalScannerIgnores": ["node_modules", "dist", ".git"]
+  },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+    "attributePosition": "auto",
+    "bracketSpacing": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noEvolvingTypes": "error",
+        "noEmptyBlockStatements": "error",
+        "useAdjacentOverloadSignatures": "error",
+        "noTemplateCurlyInString": "warn",
+        "noIrregularWhitespace": "warn",
+        "noDuplicateElseIf": "error",
+        "noDuplicateCustomProperties": "error"
+      },
+      "style": {
+        "useNamingConvention": {
+          "level": "off",
+          "options": {
+            "requireAscii": true
+          }
+        },
+        "useForOf": "error",
+        "useCollapsedElseIf": "error",
+        "noYodaExpression": "error",
+        "noNamespace": "error",
+        "useFilenamingConvention": "off",
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error",
+        "useConsistentCurlyBraces": "error",
+        "useCollapsedIf": "error",
+        "noNestedTernary": "error",
+        "noExportedImports": "error",
+        "noCommonJs": "error"
+      },
+      "performance": {
+        "useTopLevelRegex": "error",
+        "noImgElement": "error"
+      },
+      "nursery": {
+        "noSecrets": "off"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "error",
+        "noUselessStringConcat": "error",
+        "noUselessUndefinedInitialization": "error",
+        "useDateNow": "error",
+        "useSimplifiedLogicExpression": "error",
+        "noUselessEscapeInRegex": "error"
+      },
+      "correctness": {
+        "useHookAtTopLevel": "error",
+        "noUnusedImports": "error",
+        "noUndeclaredVariables": "error",
+        "noUndeclaredDependencies": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

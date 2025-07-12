@@ -1,0 +1,41 @@
+{
+  "name": "drizzle-to-zod-ts",
+  "version": "1.0.0",
+  "description": "Convert Drizzle ORM table definitions to Zod schema strings",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "keywords": [
+    "drizzle",
+    "drizzle-orm",
+    "zod",
+    "schema",
+    "typescript",
+    "orm",
+    "validation",
+    "converter",
+    "generator"
+  ],
+  "author": "mpeciak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpeciakk/drizzle-to-zod-ts"
+  },
+  "bugs": {
+    "url": "https://github.com/mpeciakk/drizzle-to-zod-ts/issues"
+  },
+  "homepage": "https://github.com/mpeciakk/drizzle-to-zod-ts#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.1",
+    "@types/node": "^24.0.13",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
